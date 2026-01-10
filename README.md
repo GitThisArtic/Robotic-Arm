@@ -5,7 +5,7 @@
 ### F - Finalized		C - Complete		P - In Progress    X - Not Started
 ### Section - Status - Date Updated
 Robot Base Model - C - 1/7/26<br/>
-Robot Lower Limb Model - P - 1/9/26<br/>
+Robot Lower Limb Model - C - 1/10/26<br/>
 Robot Upper Limb Model - X - 1/9/26<br/>
 Robot Wrist Model - X - 1/9/26<br/>
 Robot Wiring - X - 1/9/26<br/>
