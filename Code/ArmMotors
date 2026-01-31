@@ -1,33 +1,41 @@
- to// Basic stepper motor control for CNC Shield V3
+// Basic stepper motor control for CNC Shield V3
 #include <AccelStepper.h>
 #include <MultiStepper.h>
 
 // Define stepper motor connections and motor interface type
-#define motorInterfaceType 1
 #define dirPinX 5
 #define stepPinX 2
-#define motorInterfaceType 1
 #define dirPinY 6
 #define stepPinY 3
+#define dirPinZ 7
+#define stepPinZ 4
+#define dirPinA 12
+#define stepPinA 13
+
 #define enablePin 8
 
 // Motor Constants 
-const int totalSteps = 1600;
 const int motorSteps = 200;
 const int microStepCount = 8;
-const int stepsToAngle = 1/360;
+const int totalSteps = motorSteps * microStepCount;
+const int degreesInCircle = 360;
 
+// Gearbox Constants
+const int noRatio = 1;
+const int baseRatio = 20;
+const int lowerRatio = 20;
+const int upperRatio = 10;
 
 // Create two instances of the AccelStepper class
 AccelStepper stepperX(AccelStepper::DRIVER, stepPinX, dirPinX);
 AccelStepper stepperY(AccelStepper::DRIVER, stepPinY, dirPinY);
-//AccelStepper stepperZ(AccelStepper::DRIVER, stepPinX, dirPinX);
+//AccelStepper stepperZ(AccelStepper::DRIVER, stepPinZ, dirPinZ);
 //AccelStepper stepperA(AccelStepper::DRIVER, stepPinY, dirPinY);
 
-// Moves to angle between 0 and 360
-int angleToSteps(double angle) {
-  int convertedSteps = totalSteps * angle * stepsToAngle;
-  return convertedSteps;
+double angleToSteps(double currentAngle, double newAngle, int gearRatio) {
+  double angle = newAngle - currentAngle;
+  int steps = angle * (totalSteps/degreesInCircle) * gearRatio;
+  return steps;
 }
 
 void setup() {
@@ -37,15 +45,15 @@ void setup() {
   pinMode(enablePin, OUTPUT);
   digitalWrite(enablePin, LOW);
   
-  // Set the maximum speed and acceleration:
-  stepperX.setMaxSpeed(100000);
-  stepperX.setAcceleration(10000);
-  stepperY.setMaxSpeed(100000);
-  stepperY.setAcceleration(10000);
-//  stepperZ.setMaxSpeed(100000);
-//  stepperZ.setAcceleration(10000);
-//  stepperA.setMaxSpeed(100000);
-//  stepperA.setAcceleration(10000);
+  // Set the maximum motor speed and acceleration:
+  stepperX.setMaxSpeed(1000);
+  stepperX.setAcceleration(500);
+  stepperY.setMaxSpeed(1000);
+  stepperY.setAcceleration(500);
+//  stepperZ.setMaxSpeed(1000);
+//  stepperZ.setAcceleration(500);
+//  stepperA.setMaxSpeed(1000);
+//  stepperA.setAcceleration(500);
 }
 
 void loop() {
@@ -53,15 +61,14 @@ void loop() {
 //  Serial.println(stepperX.currentPosition());
     
   // Set the target position for each axis
-  stepperX.moveTo(totalSteps);
-  stepperY.moveTo(totalSteps);
+  stepperX.moveTo(angleToSteps(0, 90, noRatio));
+  stepperY.moveTo(angleToSteps(0, 90, noRatio));
 //  stepperZ.moveTo(totalSteps);
 //  stepperA.moveTo(totalSteps);
   
   // Run the motors to move to the set positions
   stepperX.run();
-//  stepperY.run();
+  stepperY.run();
 //  stepperZ.run();
 //  stepperA.run();
-
 }
