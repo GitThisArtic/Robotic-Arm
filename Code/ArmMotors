@@ -1,6 +1,5 @@
 // Basic stepper motor control for CNC Shield V3
 #include <AccelStepper.h>
-#include <MultiStepper.h>
 
 // Define stepper motor connections and motor interface type
 #define dirPinX 5
