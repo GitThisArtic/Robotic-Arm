@@ -5,7 +5,7 @@ This is a side project of mine in an attempt to create a 4 axis robotic arm.
 ## Design
 The project was designed in Fusion 360 and utilizes multiple cycloidal gearboxes of varying sizes
 and ratios. The arm also implements several metal bearings and dowel pins for decreased friction
-between components, leading to increased gearbox efficiency.
+between components leading to increased gearbox efficiency.
 
 ## Electrical
 The arm utilizes four, 200 step Nema 17 motors on an open-loop feedback system. Each motor is
