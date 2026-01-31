@@ -10,7 +10,7 @@ between components leading to increased gearbox efficiency.
 ## Electrical
 The arm utilizes four, 200 step Nema 17 motors on an open-loop feedback system. Each motor is
 controlled by a TMC 2209 with 8 micro steps enabling for a total of 1600 micro steps per rotation.
-These motor controllers are attached to an Arduino UNO with a CNC shield extension to manage axis
+These motor controllers are attached to an Arduino UNO with a CNC shield extension to manage axises
 X, Y, Z, and A.
 
 ## Software
