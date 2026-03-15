@@ -29,7 +29,7 @@ Robot Wiring - P - 1/9/26<br/>
 Motor Code - P - 1/9/26<br/>
 Camera Vision Code - P - 2/19/26<br/>
 
-##Notes
+## Notes
 - Look into implementing ROS on raspberry pi
 - Possibly use logic level converter between PI and UNO
 - Larger power supply
