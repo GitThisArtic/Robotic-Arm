@@ -10,7 +10,7 @@ between components, ultimately leading to increased gearbox efficiency.
 ## Electrical
 The arm utilizes four, 200 step Nema 17 motors on an open-loop feedback system. Each motor is
 controlled by a TMC 2209 with 8 micro steps enabling for a total of 1600 micro steps per rotation.
-These motor controllers are attached to an Arduino UNO with a CNC shield extension to manage axises
+These motor controllers are attached to an Arduino UNO with a CNC shield extension to manage axis
 X, Y, Z, and A.
 
 ## Software
@@ -28,3 +28,8 @@ Robot Wrist Model - X - 1/9/26<br/>
 Robot Wiring - P - 1/9/26<br/>
 Motor Code - P - 1/9/26<br/>
 Camera Vision Code - P - 2/19/26<br/>
+
+##Notes
+- Look into implementing ROS on raspberry pi
+- Possibly use logic level converter between PI and UNO
+- Larger power supply
