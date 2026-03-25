@@ -33,4 +33,5 @@ Camera Vision Code - P - 2/19/26<br/>
 ## Notes
 - Look into implementing ROS on raspberry pi
 - Possibly use logic level converter between PI and UNO
-- Larger power supply
+- Larger power supply such as 10A Power Bench
+- custom PDP?
