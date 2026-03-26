@@ -1,7 +1,6 @@
 # Robotic-Arm
 ## Overview
-This is a side project of mine in an attempt to create a 4 axis robotic arm. Currently this project
-is on pause as I reevaluate the scope of it and focus on classes.
+This is a side project of mine in an attempt to create a 4 axis robotic arm.
 
 ## Design
 The project was designed in Fusion 360 and utilizes multiple cycloidal gearboxes of varying sizes
