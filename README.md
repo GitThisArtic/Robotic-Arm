@@ -19,15 +19,15 @@ position based off the counted steps to approximate the current location of the 
 feedback.
 
 ## Current Checklist
-### F - Finalized		C - Complete		P - In Progress    X - Not Started
-### Section - Status - Date Updated
-Robot Base Model - C - 1/7/26<br/>
-Robot Lower Limb Model - C - 1/10/26<br/>
-Robot Upper Limb Model - X - 1/9/26<br/>
-Robot Wrist Model - X - 1/9/26<br/>
-Robot Wiring - P - 1/9/26<br/>
-Motor Code - P - 1/9/26<br/>
-Camera Vision Code - P - 2/19/26<br/>
+### F - Finalized		C - Complete		I - In Progress    X - Not Started
+### Section - Status
+Robot Base Model - C
+Robot Lower Limb Model - C
+Robot Upper Limb Model - X
+Robot Wrist Model - X
+Robot Wiring - I
+Motor Code - I
+Camera Vision Code - I
 
 ## Notes
 - Look into implementing ROS on raspberry pi
