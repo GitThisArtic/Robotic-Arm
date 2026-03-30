@@ -21,11 +21,11 @@ feedback.
 ## Current Checklist
 ### F - Finalized		C - Complete		I - In Progress    X - Not Started
 ### Section - Status
-Robot Base Model - C
+Robot Base Model - I
 Robot Lower Limb Model - C
 Robot Upper Limb Model - X
 Robot Wrist Model - X
-Robot Wiring - I
+Robot Wiring - X
 Motor Code - I
 Camera Vision Code - I
 
