@@ -19,7 +19,7 @@ position based off the counted steps to approximate the current location of the 
 feedback.
 
 ## Current Checklist
-### F - Finalized|C - Complete|I - In Progress|X - Not Started
+### F - Finalized | C - Complete | I - In Progress | X - Not Started
 ### Section - Status
 - Robot Base Model - I
 - Robot Lower Limb Model - C
