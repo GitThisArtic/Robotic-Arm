@@ -23,7 +23,7 @@ feedback.
 ### Section - Status
 - Robot Base Model - I
 - Robot Lower Limb Model - C
-- Robot Upper Limb Model - X
+- Robot Upper Limb Model - C
 - Robot Wrist Model - X
 - Robot Wiring - X
 - Motor Code - I
