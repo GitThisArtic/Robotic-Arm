@@ -32,5 +32,5 @@ feedback.
 ## Notes
 - Look into implementing ROS on raspberry pi
 - Possibly use logic level converter between PI and UNO
-- Larger power supply such as 10A Power Bench
+- Larger power supply 10A Power Bench
 - Custom PDP and encoders?
