@@ -19,13 +19,13 @@ position based off the counted steps to approximate the current location of the 
 feedback.
 
 ## Current Checklist
-[x] Robot Base Model
-[x] Robot Lower Limb Model
-[x] Robot Upper Limb Model
-[ ] Robot Wrist Model
-[ ] Robot Wiring
-[ ] Motor Code
-[ ] Camera Vision Code
+- [x] Robot Base Model
+- [x] Robot Lower Limb Model
+- [x] Robot Upper Limb Model
+- [ ] Robot Wrist Model
+- [x] Robot Wiring
+- [ ] Motor Code
+- [ ] Camera Vision Code
 
 ## Notes
 - Look into implementing ROS on raspberry pi
